@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="practica_19\public\style.css" rel="stylesheet" type="text/css">
+    <title>Tabla de personas</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>SSN</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Age</th>
+            <th>Blood</th>
+        </tr>
+        <% Object.keys(persons).forEach(function(prop) { %>
+        <tr>
+            <td> <%= persons[prop].socialServiceNumber %> </td>
+            <td> <%= persons[prop].firstName %> </td>
+            <td> <%= persons[prop].lastName %> </td>
+            <td> <%= persons[prop].age %> </td>
+            <td> <%= persons[prop].bloodType %> </td>
+        </tr>
+        <% }); %>
+    </table>
+    <a href="./index">Back</a>
+</body>
+</html>
