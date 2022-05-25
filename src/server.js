@@ -2,7 +2,6 @@
 let express = require('express');
 let app = express();
 let personsRoute= require('./routes/persons');
-app.use('assets', express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: false}));
 app.set('view engine', 'ejs');
 require("dotenv").config();

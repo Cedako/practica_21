@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: yellow;
+    color: mediumorchid;
+    text-align: center;
+}
+a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: chartreuse;
+  font-size: large;
+}
+a:hover {
+  color: burlywood;
+  font-size: xx-large;
+}
+a:active {
+  color: crimson;
+}
+a:visited {
+  color: aqua;
+}
+
+/* spacing */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
